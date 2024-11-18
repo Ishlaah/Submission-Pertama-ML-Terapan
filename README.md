@@ -197,6 +197,12 @@ Proses *One Hot Encoding* pada fitur kategorikal adalah teknik yang digunakan un
 ### Splitting data
 Proses pembagian dataset menjadi data training dan data testing penting dalam pengembangan model *machine learning*. Ini dilakukan untuk mengevaluasi performa model pada data yang belum pernah dilihat sebelumnya dan untuk menghindari *overfitting*. Data training digunakan untuk melatih model, sedangkan data testing digunakan untuk menguji seberapa baik model yang dilatih dapat melakukan prediksi pada data yang belum pernah dilihat sebelumnya. Dengan memisahkan data training dan data testing, kita dapat mengukur sejauh mana model dapat mengeneralisasi dan memprediksi dengan akurat pada data baru. Rasio 80:20 sering digunakan sebagai perbandingan pembagian data training dan data testing. Data training sebesar 80% digunakan untuk melatih model, sementara data testing sebesar 20% digunakan untuk menguji performa model. Rasio ini merupakan aturan praktis umum yang memberikan keseimbangan antara memiliki jumlah data yang cukup untuk melatih model dan menyediakan data yang cukup untuk menguji performa model. Namun, rasio ini dapat bervariasi tergantung pada karakteristik dataset dan kebutuhan proyek tertentu.
 
+### Menggabungkan Dataframe
+Tujuannya adalah menambahkan kolom hasil encoding ke dalam DataFrame asli. Agar data tetap dalam satu struktur yang utuh dan mudah digunakan, kolom-kolom hasil encoding perlu digabungkan kembali ke DataFrame asli. Menggabungkan DataFrame memastikan dataset tetap utuh, lengkap, dan siap digunakan untuk proses analisis maupun modeling selanjutnya. 
+
+### Menghapus Kolom Asli
+Tujuannya adalah menghapus kolom asli yang telah diubah menjadi one-hot encoding. Kolom-kolom asli (Diabetes, BloodPressureProblems, dsb.) sudah tidak dibutuhkan karena informasinya telah terwakili oleh kolom hasil encoding.
+
 ## 4. Modeling
 
 Dalam proses modeling, proyek ini akan menggunakan algoritma *SVR* dan algoritma *Huber Regressor* berdasarkan hasil dari data *library* pycaret. Algoritma *SVR* (Support Vector Regression) dan *Huber Regressor* adalah dua algoritma yang umum digunakan dalam masalah regresi. Kedua algoritma ini digunakan dalam proyek ini untuk memprediksi premi asuransi kesehatan berdasarkan faktor-faktor risiko yang relevan. Berikut adalah penjelasan mengenai konsep dan cara kerja keduanya:
