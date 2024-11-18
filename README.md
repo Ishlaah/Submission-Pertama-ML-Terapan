@@ -170,10 +170,18 @@ Visualisasi Boxplot:
    - Garis di dalam kotak menunjukkan posisi median.
    - Whisker atau garis lurus yang terhubung dengan kotak menunjukkan rentang data yang dianggap tidak sebagai outlier.
    - Titik-titik di luar whisker menunjukkan adanya outlier.
-  
+   
+![251948708-994b7ef1-fe6d-4bc4-94a5-5800322feff](https://github.com/user-attachments/assets/11b8d46b-2158-4053-8e71-8aa901e9cf8c)
+
 Dengan menggunakan metode IQR dan visualisasi boxplot, kita dapat mengidentifikasi dan mengatasi outlier dalam data. Outlier dapat menjadi nilai yang ekstrem dan tidak biasa yang dapat mempengaruhi hasil analisis statistik dan model prediksi. Dengan memperhatikan IQR dan melihat visualisasi boxplot, kita dapat menentukan batas atas dan batas bawah untuk outlier, serta mengambil tindakan yang tepat, seperti menghapus atau mengelola outlier tersebut, agar tidak mempengaruhi hasil analisis secara signifikan. Kemudian untuk menganalisa sebaran dataset, kita dapat menggunakan histogram. Histogram adalah visualisasi grafis yang digunakan untuk menampilkan distribusi frekuensi dari suatu variabel dalam bentuk interval atau bin.
 
+
+![visualisasi](https://github.com/user-attachments/assets/630063dd-5cdb-40f4-9a06-5470ecd30691)
+
 Histogram membantu kita memahami pola dan sebaran data dengan cepat. Analisis sebaran dataset menggunakan histogram memungkinkan kita mengidentifikasi tipe distribusi data, menentukan apakah terdapat outlier, dan memperoleh gambaran umum tentang data tersebut.  Hal ini dapat menjadi langkah awal dalam eksplorasi data sebelum melakukan analisis lebih lanjut atau membangun model prediksi. Terakhir, untuk menganalisa keterkaitan antara fitur numerik dan fitur kategori, kita dapat menggunakan correlation matrix dengan fungsi pandas dan visualisasi heatmap menggunakan library seaborn. 
+
+
+![heatmap](https://github.com/user-attachments/assets/e10d0891-7fe6-496c-b16b-8b811541a0c2)
 
 Heatmap menunjukkan tingkat korelasi antara setiap pasangan fitur numerik dan fitur kategori. Warna dalam heatmap mencerminkan tingkat korelasi, di mana warna lebih terang menunjukkan korelasi yang lebih kuat, sedangkan warna lebih gelap menunjukkan korelasi yang lebih lemah atau tidak ada korelasi. Kita dapat melihat hubungan positif atau negatif antara fitur numerik dan fitur kategori berdasarkan nilai korelasi. Analisis ini membantu dalam memahami keterkaitan antar fitur-fitur dalam dataset dan dapat memberikan wawasan yang berguna untuk pemilihan fitur, pemodelan, atau analisis lebih lanjut.
 
